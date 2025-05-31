@@ -128,7 +128,8 @@ public class Player : MonoBehaviour
 
         }
 
-        gameManager.GetComponent<UIManager>().UpdateHealthUI(health);
+        gameManager.GetComponent<UIManager>().UpdateHealthUI(health / maxHealth);
+
     }
 
     public void BoostJump(float boostPower)
